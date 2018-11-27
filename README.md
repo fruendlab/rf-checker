@@ -37,6 +37,8 @@ from the installation folder, or (if you installed it) run
 
 This will show you a help screen with more specific usage information.
 
+Try it out on some of the example outlines!
+
 ## A a library
 
 Here is a simple example
