@@ -41,16 +41,19 @@ This will show you a help screen with more specific usage information.
 
 Here is a simple example
 
-    >>> from check_rf import check_rf
-    >>> import numpy as np
-    >>> # Create an rf pattern 
-    >>> t = 2*np.pi*np.arange(50, dtype='d')/50
-    >>> rf4 = np.exp(1j*t)*(1 + np.cos(4*t))
-    >>> # Check on a small grid (up 21 points)
-    >>> result = check_rf(rf4, 21)
-    >>> result.center
-    0j
-    >>> result.error < 1e-10   # Should be basically 0
-    True
+```python
+>>> from check_rf import check_rf
+>>> import numpy as np
+>>> # Create an rf pattern 
+>>> t = 2*np.pi*np.arange(50, dtype='d')/50
+>>> rf4 = np.exp(1j*t)*(1 + np.cos(4*t))
+>>> # Check on a small grid (up 21 points)
+>>> result = check_rf(rf4, 21)
+>>> result.center
+0j
+>>> result.error < 1e-10   # Should be basically 0
+True
+
+```
 
 In the same way, you can check outlines in your own scripts.
