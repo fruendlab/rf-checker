@@ -106,6 +106,15 @@ if __name__ == '__main__':
 Usage:
     check_rf.py [options] <FILENAME>
 
+Check if a shape outline read from a file can be represented as a radial
+frequency pattern. The file is basically a csv file. It contains the shape's
+coordinates in the following way:
+<x1>,<y1>
+<x2>,<y2>
+<x3>,<y3>
+...
+<xn>,<yn>
+
 Options:
     -g <GRIDSIZE>, --gridsize=<GRIDSIZE>
         Number of grid points (in each direction) to scan. [Default: 10]
